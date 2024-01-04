@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div>
+        <div class="mt-5">
+            <img class="img-fluid" src="{% static 'Restaurant+Banner.jpeg' %}" alt="hhhhh">
+        </div>
+        <div class="mt-4 text-center">
+            <h3 class="">About Us</h3>
+        </div>
+    </div>
+    <hr class="w-50 mx-auto">
+    <div class="d-flex justify-content-around align-items-center mt-5">
+        <div>
+            <h2>Spicy Restaurant..</h2>
+            <p>We value your feedback and inquiries.<br>Please feel free to get in touch with us using the following information</p>
+        </div>
+        <div>
+            <h4>Address: </h4>
+            <p>Mirpur 11 <br>Dhaka 1200 <br>Bangladesh</p>
+            <h4>Contact:</h4>
+            <p>Phone: 019xx xxx xxx, 
+                email: <a href="#">restaurant@spicy.com</a>
+            </p>
+        </div>
+    </div>
+{% endblock  %}

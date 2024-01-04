@@ -1,0 +1,11 @@
+.home_section{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/* .resturent-img{
+    width: 500px;
+    height: 400px;
+} */

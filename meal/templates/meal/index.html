@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div class="container row mx-auto gap-4 text-center mt-5">
+        {% for i in data.categories %}
+            <div class="card col-md-4" style="width: 18rem;">
+                <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4>Name: {{i.strCategory}}</h4>
+                    <p>ID: {{i.idCategory}}</p>
+                    <p class="card-text">{{ i.strCategoryDescription | truncatewords:10 }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock  %}
